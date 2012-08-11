@@ -285,7 +285,7 @@
     </target>
     <target name="self-test" depends="prepare-self-test, test-examples">
         <!-- test NAnt.Console assembly -->
-        <nant buildfile="tests/NAnt.Console/NAnt.Console.build" target="test" verbose="true" />
+        <nant buildfile="tests/NAnt.Console/NAnt.Console.build" target="test" />
         <!-- test NAnt.Core assembly -->
         <nant buildfile="tests/NAnt.Core/NAnt.Core.build" target="test" />
         <!-- test extension assemblies -->
