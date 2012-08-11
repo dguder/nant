@@ -179,6 +179,7 @@
     <target name="test" depends="build" description="Tests current configuration">
         <echo message="Running unit tests with just built version of NAnt." />
         <exec program="${build.dir}/bin/${nant.console.name}.exe" managed="true">
+            <arg value="-debug+" />
             <arg value="-buildfile:NAnt.build" />
             <arg value="-D:project.version=${project.version}" />
             <arg value="-D:project.release.type=${project.release.type}" />
