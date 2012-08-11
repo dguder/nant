@@ -41,7 +41,7 @@ install: bootstrap
 	$(NANT) $(TARGET_FRAMEWORK) -f:NAnt.build install -D:prefix="$(prefix)"  -D:destdir="$(DESTDIR)" -D:doc.prefix="$(docdir)"
 
 run-test: bootstrap
-	$(NANT) $(TARGET_FRAMEWORK) -f:NAnt.build test -debug+
+	$(NANT) $(TARGET_FRAMEWORK) -f:NAnt.build test
 	
 bootstrap: setup bootstrap\NAnt.exe bootstrap\NAnt.Core.dll bootstrap\NAnt.DotNetTasks.dll bootstrap\NAnt.CompressionTasks.dll bootstrap\NAnt.Win32Tasks.dll
 	
