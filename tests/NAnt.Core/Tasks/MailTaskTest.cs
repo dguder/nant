@@ -32,6 +32,7 @@ using NAnt.Core.Types;
 
 using netDumbster.smtp;
 
+#if false
 namespace Tests.NAnt.Core.Tasks
 {
 
@@ -1749,3 +1750,4 @@ namespace Tests.NAnt.Core.Tasks
         #endregion Private Instance Methods
     }
 }
+#endif
