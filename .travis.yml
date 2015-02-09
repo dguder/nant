@@ -1,8 +1,7 @@
 
 language: csharp
 
-install:
-  - sudo: false  # use the new container-based Travis infrastructure
+sudo: false  # use the new container-based Travis infrastructure
 
 env:
   - TARGET=mono-2.0 MCS="mcs -sdk:2"
