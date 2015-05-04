@@ -9,5 +9,5 @@ env:
 
 script:
   - mono --version
-  - make clean run-test TARGET=$TARGET MCS="$MCS"
+  - travis_wait make clean run-test TARGET=$TARGET MCS="$MCS"
     
