@@ -5,9 +5,9 @@ sudo: false  # use the new container-based Travis infrastructure
 
 env:
   - TARGET=mono-2.0 MCS="mcs -sdk:2"
-  - TARGET=mono-4.0 MCS="mcs -sdk:4"
+#  - TARGET=mono-4.0 MCS="mcs -sdk:4"
 
 script:
   - mono --version
-  - travis_wait make clean run-test TARGET=$TARGET MCS="$MCS"
+  - make clean run-test TARGET=$TARGET MCS="$MCS"
     
